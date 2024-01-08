@@ -9,6 +9,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    //   data provided globally
     setUser({ username, passsword });
   };
 
@@ -20,7 +21,7 @@ function Login() {
         onChange={(e) => setUsername(e.target.value)}
         value={username}
         placeholder="username"
-      />
+      />{" "}
       <input
         type="text"
         onChange={(e) => setPasssword(e.target.value)}
